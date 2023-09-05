@@ -1,0 +1,28 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"singletitle": {
+				"__TYPE__": "FieldContent",
+				"value": "hardly",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "coal",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	}
+]

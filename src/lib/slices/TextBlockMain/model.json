@@ -1,0 +1,34 @@
+{
+  "id": "text_block_main",
+  "type": "SharedSlice",
+  "name": "TextBlockMain",
+  "description": "TextBlockMain",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "singletitle": {
+          "type": "Text",
+          "config": {
+            "label": "SingleTitle",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}
