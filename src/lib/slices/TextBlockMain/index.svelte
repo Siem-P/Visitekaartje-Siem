@@ -4,10 +4,11 @@
 </script>
 
 <section data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
+
+		{slice.primary.singletitle}
+
 		{#each slice.items as item}
 		  <p>{item.title}</p>
-		  {slice.primary.singletitle}
-	
 		{/each} 
 </section>
 
