@@ -5,11 +5,14 @@
 
 
 <section data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
-	<img src="{slice.primary.card_image.url}" alt="{slice.primary.card_image.alt}">
+	<div class="image-wrapper">
+		<img src="{slice.primary.card_image.url}" alt="{slice.primary.card_image.alt}">
+	</div>
+	
 	<article class="content-wrapper">
 		{#each slice.items as item}
-		<p>{item.infoline}</p>
-	{/each}
+			<p>{item.infoline}</p>
+		{/each}
 	</article>
 	
 </section>
