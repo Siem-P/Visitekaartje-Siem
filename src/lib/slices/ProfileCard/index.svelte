@@ -5,19 +5,69 @@
 
 
 <section data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
-	<div class="image-wrapper">
-		<img src="{slice.primary.card_image.url}" alt="{slice.primary.card_image.alt}">
-	</div>
-	
+
 	<article class="content-wrapper">
+		<div class="image-wrapper">
+			<img src="{slice.primary.card_image.url}" alt="{slice.primary.card_image.alt}">
+		</div>
+		<div class="info-items">
 		{#each slice.items as item}
 			<p>{item.infoline}</p>
 		{/each}
+		</div>
+	</article>
+	<article class="content-wrapper">
+		<div class="image-wrapper">
+			<img src="{slice.primary.card_image.url}" alt="{slice.primary.card_image.alt}">
+		</div>
+		<div class="info-items">
+		{#each slice.items as item}
+			<p>{item.infoline}</p>
+		{/each}
+		</div>
 	</article>
 	
 </section>
 
 
-<pre>
+<!-- <pre>
 {JSON.stringify(slice, null, 2)}
-</pre>
+</pre> -->
+
+
+
+<style>
+
+	.image-wrapper {
+		border: tomato 2px solid;
+		width: 15em;
+		display: flex;
+	}
+	img {
+		width: 100%;
+		height: 10em;
+	}
+	.content-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		height: 28em;
+		width: 22em;
+	}
+
+	article {
+		display: flex;
+		align-self: center;
+		border: tomato 2px solid;
+		width: 40em;
+	}
+
+	.info-items {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+</style>

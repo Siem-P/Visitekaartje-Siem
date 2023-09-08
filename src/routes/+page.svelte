@@ -8,5 +8,16 @@
 </script>
 
 <!-- <h1>{ data.slices }</h1> -->
+<section class="content-wrapper">
+    <SliceZone slices={data.slices} {components} />
+</section>
 
-<SliceZone slices={data.slices} {components} />
+
+<style>
+    .content-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%
+    }
+</style>
