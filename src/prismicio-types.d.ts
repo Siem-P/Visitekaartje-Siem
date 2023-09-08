@@ -4,7 +4,7 @@ import type * as prismic from '@prismicio/client';
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type IndexDocumentDataSlicesSlice = TextBlockMainSlice | TestSlice;
+type IndexDocumentDataSlicesSlice = ProfileCardSlice;
 
 /**
  * Content for index documents
@@ -70,6 +70,63 @@ export type IndexDocument<Lang extends string = string> = prismic.PrismicDocumen
 >;
 
 export type AllDocumentTypes = IndexDocument;
+
+/**
+ * Primary content in *ProfileCard → Primary*
+ */
+export interface ProfileCardSliceDefaultPrimary {
+	/**
+	 * CardImage field in *ProfileCard → Primary*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: profile_card.primary.card_image
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	card_image: prismic.ImageField<never>;
+}
+
+/**
+ * Primary content in *ProfileCard → Items*
+ */
+export interface ProfileCardSliceDefaultItem {
+	/**
+	 * InfoField field in *ProfileCard → Items*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: profile_card.items[].infoline
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	infoline: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for ProfileCard Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProfileCardSliceDefault = prismic.SharedSliceVariation<
+	'default',
+	Simplify<ProfileCardSliceDefaultPrimary>,
+	Simplify<ProfileCardSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *ProfileCard*
+ */
+type ProfileCardSliceVariation = ProfileCardSliceDefault;
+
+/**
+ * ProfileCard Shared Slice
+ *
+ * - **API ID**: `profile_card`
+ * - **Description**: ProfileCard
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProfileCardSlice = prismic.SharedSlice<'profile_card', ProfileCardSliceVariation>;
 
 /**
  * Default variation for Test Slice
@@ -172,6 +229,11 @@ declare module '@prismicio/client' {
 			IndexDocumentData,
 			IndexDocumentDataSlicesSlice,
 			AllDocumentTypes,
+			ProfileCardSlice,
+			ProfileCardSliceDefaultPrimary,
+			ProfileCardSliceDefaultItem,
+			ProfileCardSliceVariation,
+			ProfileCardSliceDefault,
 			TestSlice,
 			TestSliceVariation,
 			TestSliceDefault,

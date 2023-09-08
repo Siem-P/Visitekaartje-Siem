@@ -1,0 +1,35 @@
+{
+  "id": "profile_card",
+  "type": "SharedSlice",
+  "name": "ProfileCard",
+  "description": "ProfileCard",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "card_image": {
+          "type": "Image",
+          "config": {
+            "label": "CardImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "infoline": {
+          "type": "Text",
+          "config": {
+            "label": "InfoField",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

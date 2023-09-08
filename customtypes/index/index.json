@@ -17,10 +17,7 @@
 				"fieldset": "Slice Zone",
 				"config": {
 					"choices": {
-						"text_block_main": {
-							"type": "SharedSlice"
-						},
-						"test": {
+						"profile_card": {
 							"type": "SharedSlice"
 						}
 					}
