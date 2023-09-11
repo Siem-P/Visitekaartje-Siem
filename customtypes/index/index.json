@@ -12,6 +12,14 @@
 				},
 				"type": "UID"
 			},
+			"broodtrommel": {
+				"type": "Link",
+				"config": {
+					"label": "broodtrommel",
+					"select": "document",
+					"customtypes": ["broodtrommel"]
+				}
+			},
 			"slices": {
 				"type": "Slices",
 				"fieldset": "Slice Zone",
