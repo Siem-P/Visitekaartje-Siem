@@ -1,49 +1,49 @@
-# Visitekaartje Siem
+# Siem's Business Card
 
-Welkom bij het "Visitekaartje Siem" GitHub-repository! Dit project is ontwikkeld met behulp van SvelteKit als frontend framework en Prismic.io als het content management systeem (CMS).
+Welcome to the "Siem's Business Card" GitHub repository! This project has been developed using SvelteKit as the frontend framework and Prismic.io as the content management system (CMS).
 
-## Snel aan de slag
+## Quick Start
 
-Om aan de slag te gaan met dit project, volg deze eenvoudige stappen:
+To get started with this project, follow these straightforward steps:
 
-### Kloon de Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/Siem-P/Visitekaartje-Siem.git
 ```
 
-### Installeer de Benodigde Pakketten
+### Install Dependencies
 
-Navigeer naar de projectdirectory:
+Navigate to the project directory:
 
 ```bash
 cd Visitekaartje-Siem
 ```
 
-Installeer de projectafhankelijkheden met npm:
+Install project dependencies using npm:
 
 ```bash
 npm install
 ```
 
-### Start de Ontwikkelingsserver
+### Start the Development Server
 
-Start de ontwikkelingsserver:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Je SvelteKit-app geïntegreerd met Prismic.io zal draaien op `http://localhost:3000`.
+Your SvelteKit app integrated with Prismic.io will be up and running at `http://localhost:3000`.
 
-## Gebruik
+## Usage
 
-Voel je vrij om dit starttemplate te gebruiken als basis voor je eigen SvelteKit- en Prismic.io-projecten. Bouw erop voort, maak nieuwe pagina's aan en ontwerp je componenten om aan de eisen van jouw project te voldoen.
+Feel free to utilize this starter template as a foundation for your SvelteKit and Prismic.io projects. Build upon it, create new pages, and design your components to meet your project's specific requirements.
 
-## Bijdragen
+## Contributing
 
-We verwelkomen bijdragen! Als je suggesties, bugfixes of verbeteringen hebt, maak dan issues aan of stuur pull-verzoeken in dit repository. Samen kunnen we deze integratie nog beter maken!
+Contributions are welcome! If you have suggestions, bug fixes, or improvements to offer, please create issues or submit pull requests in this repository. Together, we can enhance this integration even further!
 
-## Licentie
+## License
 
-Dit project is gelicentieerd onder de [MIT-licentie](LICENSE). Je kunt het gebruiken voor persoonlijke of commerciële projecten.
+This project is licensed under the [MIT License](LICENSE). You are free to use it for personal or commercial projects.
