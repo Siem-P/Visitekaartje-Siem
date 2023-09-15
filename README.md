@@ -1,4 +1,4 @@
-# Siem's Business Card
+# Siem's Visitekaartje
 
 Welcome to the "Siem's Business Card" GitHub repository! This project has been developed using SvelteKit as the frontend framework and Prismic.io as the content management system (CMS).
 
