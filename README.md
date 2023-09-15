@@ -1,38 +1,49 @@
-# create-svelte
+# Visitekaartje Siem
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Welkom bij het "Visitekaartje Siem" GitHub-repository! Dit project is ontwikkeld met behulp van SvelteKit als frontend framework en Prismic.io als het content management systeem (CMS).
 
-## Creating a project
+## Snel aan de slag
 
-If you're seeing this, you've probably already done this step. Congrats!
+Om aan de slag te gaan met dit project, volg deze eenvoudige stappen:
+
+### Kloon de Repository
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+git clone https://github.com/Siem-P/Visitekaartje-Siem.git
 ```
 
-## Developing
+### Installeer de Benodigde Pakketten
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Navigeer naar de projectdirectory:
+
+```bash
+cd Visitekaartje-Siem
+```
+
+Installeer de projectafhankelijkheden met npm:
+
+```bash
+npm install
+```
+
+### Start de Ontwikkelingsserver
+
+Start de ontwikkelingsserver:
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Je SvelteKit-app geïntegreerd met Prismic.io zal draaien op `http://localhost:3000`.
 
-To create a production version of your app:
+## Gebruik
 
-```bash
-npm run build
-```
+Voel je vrij om dit starttemplate te gebruiken als basis voor je eigen SvelteKit- en Prismic.io-projecten. Bouw erop voort, maak nieuwe pagina's aan en ontwerp je componenten om aan de eisen van jouw project te voldoen.
 
-You can preview the production build with `npm run preview`.
+## Bijdragen
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+We verwelkomen bijdragen! Als je suggesties, bugfixes of verbeteringen hebt, maak dan issues aan of stuur pull-verzoeken in dit repository. Samen kunnen we deze integratie nog beter maken!
+
+## Licentie
+
+Dit project is gelicentieerd onder de [MIT-licentie](LICENSE). Je kunt het gebruiken voor persoonlijke of commerciële projecten.
