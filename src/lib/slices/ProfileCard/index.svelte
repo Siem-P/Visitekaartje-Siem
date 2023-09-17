@@ -16,16 +16,6 @@
 		{/each}
 		</div>
 	</article>
-	<article class="content-wrapper">
-		<div class="image-wrapper">
-			<img src="{slice.primary.card_image.url}" alt="{slice.primary.card_image.alt}">
-		</div>
-		<div class="info-items">
-		{#each slice.items as item}
-			<p>{item.infoline}</p>
-		{/each}
-		</div>
-	</article>
 	
 </section>
 
@@ -38,12 +28,19 @@
 
 <style>
 
+
 	.image-wrapper {
 		border: tomato 2px solid;
-		width: 15em;
+		width: 10em;
+		height: 10em;
 		display: flex;
+		border-radius: 50%;
+		overflow: hidden;
 	}
 	img {
+		background-size: contain;
+		background-clip: content-box;
+		
 		width: 100%;
 		height: 10em;
 	}
@@ -55,6 +52,7 @@
 		flex-wrap: wrap;
 		height: 28em;
 		width: 22em;
+		
 	}
 
 	article {

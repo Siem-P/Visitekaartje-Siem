@@ -4,70 +4,6 @@ import type * as prismic from '@prismicio/client';
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-/**
- * Content for broodtrommel documents
- */
-interface BroodtrommelDocumentData {
-	/**
-	 * name field in *broodtrommel*
-	 *
-	 * - **Field Type**: Rich Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: broodtrommel.name
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-	 */
-	name: prismic.RichTextField;
-
-	/**
-	 * height field in *broodtrommel*
-	 *
-	 * - **Field Type**: Number
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: broodtrommel.height
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#number
-	 */
-	height: prismic.NumberField;
-
-	/**
-	 * width field in *broodtrommel*
-	 *
-	 * - **Field Type**: Number
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: broodtrommel.width
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#number
-	 */
-	width: prismic.NumberField;
-
-	/**
-	 * description field in *broodtrommel*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: broodtrommel.description
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/field#key-text
-	 */
-	description: prismic.KeyTextField;
-}
-
-/**
- * broodtrommel document from Prismic
- *
- * - **API ID**: `broodtrommel`
- * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type BroodtrommelDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<
-	Simplify<BroodtrommelDocumentData>,
-	'broodtrommel',
-	Lang
->;
-
 type IndexDocumentDataSlicesSlice = ProfileCardSlice;
 
 /**
@@ -144,7 +80,7 @@ export type IndexDocument<Lang extends string = string> = prismic.PrismicDocumen
 	Lang
 >;
 
-export type AllDocumentTypes = BroodtrommelDocument | IndexDocument;
+export type AllDocumentTypes = IndexDocument;
 
 /**
  * Primary content in *ProfileCard → Primary*
@@ -300,8 +236,6 @@ declare module '@prismicio/client' {
 
 	namespace Content {
 		export type {
-			BroodtrommelDocument,
-			BroodtrommelDocumentData,
 			IndexDocument,
 			IndexDocumentData,
 			IndexDocumentDataSlicesSlice,
